@@ -1,4 +1,4 @@
-/* Task: Create simple base styles and layout helpers for the Techium homepage. */
+/* Task 2: Set base color values for body, links, visually-hidden, card-category and section-tagline. */
 
 html {
     scroll-behavior: smooth;
@@ -12,7 +12,7 @@ body {
     margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.5;
-    color: #111;
+    color: #161616;
 }
 
 h1,
@@ -29,19 +29,12 @@ img {
 }
 
 a {
-    color: inherit;
+    color: #161616;
     text-decoration: none;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    display: none;
 }
 
 .container {
@@ -64,6 +57,7 @@ a {
 
 .section-tagline {
     margin-bottom: 0;
+    color: #d73953;
 }
 
 .section-body {
@@ -125,6 +119,10 @@ a {
 
 .section-hero {
     padding: 5rem 0;
+}
+
+.card-category {
+    color: #d73953;
 }
 
 .card-avatar {

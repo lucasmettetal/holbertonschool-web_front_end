@@ -1,4 +1,13 @@
-/* Task: Create simple base styles and layout helpers for the Techium homepage. */
+/* Task 3: Introduce root CSS variables and reuse them for text and primary colors. */
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
 
 html {
     scroll-behavior: smooth;
@@ -12,7 +21,7 @@ body {
     margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.5;
-    color: #111;
+    color: var(--text-color);
 }
 
 h1,
@@ -29,19 +38,12 @@ img {
 }
 
 a {
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    display: none;
 }
 
 .container {
@@ -64,6 +66,7 @@ a {
 
 .section-tagline {
     margin-bottom: 0;
+    color: var(--color-primary);
 }
 
 .section-body {
@@ -125,6 +128,10 @@ a {
 
 .section-hero {
     padding: 5rem 0;
+}
+
+.card-category {
+    color: var(--color-primary);
 }
 
 .card-avatar {
