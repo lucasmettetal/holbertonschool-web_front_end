@@ -1,7 +1,7 @@
 /* Task 5: Add font-size variables and apply base font sizes to html and body. */
 
 :root {
-    --color-primary: #D73953;
+    --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;

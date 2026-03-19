@@ -1,4 +1,4 @@
-/* Task 7: Integrate Google Fonts as first choices in font-family variables. */
+/* Task 12: Add section-title variables and complete section-title styling. */
 
 :root {
     --color-primary: #d73953;
@@ -16,6 +16,13 @@
     --font-size-xx-large: 4.8rem;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
 }
 
 html {
@@ -32,7 +39,7 @@ body {
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
-    line-height: 1.5;
+    line-height: var(--line-height-base);
     color: var(--text-color);
 }
 
@@ -80,15 +87,23 @@ a {
 
 .section-header {
     margin-bottom: 1.5rem;
+    text-align: var(--section-header-align);
 }
 
 .section-title {
-    margin-bottom: 0.5rem;
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
 }
 
 .section-tagline {
     margin-bottom: 0;
     color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
 
 .section-body {
