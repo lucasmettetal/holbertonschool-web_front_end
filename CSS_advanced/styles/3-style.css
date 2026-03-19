@@ -1,7 +1,7 @@
 /* Task 3: Introduce root CSS variables and reuse them for text and primary colors. */
 
 :root {
-    --color-primary: #d73953;
+    --color-primary: #D73953;
     --color-black: #090909;
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
